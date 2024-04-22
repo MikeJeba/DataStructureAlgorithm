@@ -1,23 +1,21 @@
 package BasicJava;
 
 public class Nine {
-    public static void main(String[] args) {
-
-        int number = 371, originalNumber, remainder, result = 0;
-
-        originalNumber = number;
-
-        while (originalNumber != 0)
-        {
-            remainder = originalNumber % 10;
-            result += Math.pow(remainder, 3);
-            originalNumber /= 10;
-        }
-
-        if(result == number)
-            System.out.println(number + " is an Armstrong number.");
-        else
-            System.out.println(number + " is not an Armstrong number.");
+public static void main(String[] args){
+    int rem ,res = 0;
+    int num = 371;
+    int or = num;
+    while(or != 0){
+         rem = or % 10;
+         res += Math.pow(rem,3);
+        or /= 10;
     }
+    if(res == num){
+        System.out.println("Num is armstrong number");
     }
+    else{
+        System.out.println("Num is not a armstrong number");
+    }
+}
+}
 
