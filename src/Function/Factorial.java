@@ -10,6 +10,9 @@ public class Factorial {
 
     static void Factorial(int num) {
         int mul = 1;
+        if(num == 0){
+            mul = 0;
+        }
         for (int i = 1; i <= num; i++) {
             mul = mul * i;
         }
