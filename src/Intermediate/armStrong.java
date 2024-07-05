@@ -9,6 +9,7 @@ public class armStrong {
         int assign = n;
         for(int i = 1; i < n; i++){
             int j = assign % 10;
+            System.out.println("What is there in: " + j);
             sum += (int) Math.pow(j,3);
             assign = assign / 10;
         }
