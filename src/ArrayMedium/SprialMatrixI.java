@@ -4,7 +4,7 @@ import java.util.*;
 
 public class SprialMatrixI {
     public static void main(String[] args) {
-        int n = 1;
+        int n = 3;
         System.out.print(Arrays.deepToString(generateMatrix(n)));
     }
     public static int[][] generateMatrix(int n) {
