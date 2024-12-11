@@ -1,4 +1,4 @@
-package BasicJava;
+package MathBasic;
 
 public class Creepy {
     public static int reverseExponentiation(int n) {
