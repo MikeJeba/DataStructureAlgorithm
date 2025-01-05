@@ -16,7 +16,7 @@ public class Perfect {
         return n == store ? true : false;
     }
         public static void main(String[] args) {
-        boolean ans = isPerfectNumber(10);
+        boolean ans = isPerfectNumber(6);
         System.out.println(ans);
     }
 }
