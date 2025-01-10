@@ -3,8 +3,8 @@ package ArrayBegin;
 public class Cells {
     public static void main(String[] args) {
         int m = 2;
-        int n = 3;
-        int[][] indices = {{0,1},{1,1}};
+        int n = 2;
+        int[][] indices = {{1,1},{0,0}};
         int res = oddCells(m,n,indices);
         System.out.print(res);
     }

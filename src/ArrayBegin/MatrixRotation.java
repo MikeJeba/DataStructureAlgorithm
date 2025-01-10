@@ -8,6 +8,10 @@ public class MatrixRotation {
         System.out.print(res);
     }
     public static boolean findRotation(int[][] mat, int[][] target) {
+
+        // why i < 4 matrix work for 4 rotation 90',180',270',360'.
+        // https://chatgpt.com/share/67815653-6918-8011-9c8d-dc1f866f1cb5
+
        for(int i = 0; i < 4; i++){
            if(same(mat,target)){
                return true;

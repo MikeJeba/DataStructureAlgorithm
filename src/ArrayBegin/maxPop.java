@@ -1,17 +1,18 @@
 package ArrayBegin;
 public class maxPop {
     public static void main(String[] args) {
-        int[][] logs = {{1950,1961},{1960,1971},{1970,1981}};
+        int[][] logs = {{1993,1999},{2000,2010}};
         int n = maximumPopulation(logs);
         System.out.println(n);
     }
+
     public static int maximumPopulation(int[][] logs) {
        int[] population = new int[101];
-       for(int[] log : logs){
+       for(int[] log : logs) {
            int birth = log[0] - 1950;
            int death = log[1] - 1950;
            population[birth]++;
-           if(death < 101){
+           if (death < 101) {
                population[death]--;
            }
        }
