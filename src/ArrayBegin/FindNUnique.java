@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class FindNUnique {
     public static void main(String[] args) {
-        int n = 1;
+        int n = 4;
         System.out.println(Arrays.toString(sumZero(n)));
     }
     public static int[] sumZero(int n) {
