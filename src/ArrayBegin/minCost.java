@@ -10,7 +10,7 @@ class minCost {
         int e = 0;
         int o = 0;
         for(int i : position){
-            if(position[i] % 2 == 0){
+            if(i % 2 == 0){
                 e++;
             }else{
                 o++;
