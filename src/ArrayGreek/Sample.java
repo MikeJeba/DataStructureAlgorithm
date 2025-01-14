@@ -1,49 +1,50 @@
 package ArrayGreek;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Sample {
 
-    public static List<Integer> spiralOrder(int[][] matrix) {
-        List<Integer> mat = new ArrayList<>();
-        int colbegin = 0;
+    public static int[][] generateMatrix(int n) {
+        int[][] res = new int[n][n];
+        int num = 1;
         int rowbegin = 0;
-        int rowend = matrix.length - 1;
-        int colend = matrix[0].length - 1;
+        int colbegin = 0;
+        int rowend = n - 1;
+        int colend = n - 1;
         while(rowbegin <= rowend && colbegin <= colend){
-            //transverse right
+            //transverse left
             for(int i = colbegin; i <= colend; i++){
-                mat.add(matrix[rowbegin][i]);
+                res[rowbegin][i] = num++;
             }
             rowbegin++;
 
             //transverse down
             for(int j = rowbegin; j <= rowend; j++){
-                mat.add(matrix[j][colend]);
+                res[j][colend] = num++;
             }
             colend--;
 
-            //tranverse lef
+            //transverse right
             if(rowbegin <= rowend){
                 for(int k = colend; k >= colbegin; k--){
-                    mat.add(matrix[rowend][k]);
+                    res[rowend][k] = num++;
                 }
             }
             rowend--;
 
+            //transverse up
             if(colbegin <= colend){
                 for(int l = rowend; l >= rowbegin; l--){
-                    mat.add(matrix[l][colbegin]);
+                    res[l][colbegin] = num++;
                 }
             }
             colbegin++;
         }
-        return mat;
+        return res;
     }
 
     public static void main(String[] args) {
-        int[][] mat = {{1,2,3},{4,5,6},{7,8,9}};
-        System.out.println(spiralOrder(mat));
+        int n = 3;
+        System.out.println(Arrays.deepToString(generateMatrix(n)));
     }
 }
