@@ -15,7 +15,7 @@ public class SprialMatrixII {
         int count = 1;
         int step = 0;
         int[][] direction = {{0,1},{1,0},{0,-1},{-1,0}};
-        int[][] result = new int[rows * cols][];
+        int[][] result = new int[rows * cols][2];
         result[0] = new int[]{rStart,cStart};
 
         while(count < rows * cols){
