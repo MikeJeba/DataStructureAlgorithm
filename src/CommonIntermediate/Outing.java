@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 public class Outing {
     public static void main(String[] args) {
         int month = 31;

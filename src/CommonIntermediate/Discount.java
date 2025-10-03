@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 
 public class Discount {
     public static void main(String[] args) {

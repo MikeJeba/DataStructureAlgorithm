@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 import java.util.Scanner;
 public class armStrong {
     public static void main(String[] args) {

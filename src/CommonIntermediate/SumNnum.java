@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 
 public class SumNnum {
     public static void main(String[] args) {

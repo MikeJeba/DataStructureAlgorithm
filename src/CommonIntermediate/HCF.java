@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 public class HCF {
     public static void main(String[] args) {
         int res = hcf(9,7);

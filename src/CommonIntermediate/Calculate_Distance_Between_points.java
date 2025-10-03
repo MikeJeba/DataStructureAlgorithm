@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 public class Calculate_Distance_Between_points {
     public static void main(String[] args) {
         int x1 = 10;

@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 import java.util.Scanner;
 public class Commission {
     public static void main(String[] args) {

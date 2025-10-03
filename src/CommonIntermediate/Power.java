@@ -1,4 +1,4 @@
-package Intermediate;
+package CommonIntermediate;
 import java.util.Scanner;
 public class Power {
     public static void main(String[] args) {
