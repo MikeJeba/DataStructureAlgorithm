@@ -1,16 +1,17 @@
 package Pattern;
 
-public class Pattern7 {
+public class Pattern9 {
     public static void main(String[] args) {
-        pattern7(5);
+        pattern9(5);
     }
 
-    public static void pattern7(int n){
+    static void pattern9(int n){
         for(int row = 0; row < n; row++){
-            for(int z = 1; z <= row ; z++){
+            for(int s = 1; s <= row; s++){
                 System.out.print(" ");
             }
-            for(int col = 1; col <= n - row; col++){
+            int stcont = 2 * (n - row) - 1;
+            for(int col = 1; col <= stcont; col++){
                 System.out.print("*");
             }
             System.out.println();
